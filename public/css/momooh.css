@@ -2,10 +2,26 @@ body {
     font-size: .875rem;
 }
 
-.feather {
+header .fa-icon{
+    height: 27px;
+    margin-top: -7px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.fa-icon, .feather{
+    margin-right: 4px;
     width: 16px;
     height: 16px;
     vertical-align: text-bottom;
+}
+
+.fa-icon .fa-secondary {
+    opacity: 0.4;
+}
+
+.fa-icon .fa-primary {
+    opacity: 1;
 }
 
 .text-bold {
