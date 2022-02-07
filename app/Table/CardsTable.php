@@ -24,6 +24,16 @@ class CardsTable extends Table
             LEFT JOIN monsters_types on id_monsters_types = idx_monsters_types 
         ';
 
-        return $this->q($sql, false);
+        $cards = $this->q($sql, false);
+
+        foreach ($cards as $ci => $card) {
+            $tcg_ocg = date_diff(date_create($card->cards_tcg_release), date_create($card->cards_ocg_release));
+
+            $cards[$ci]->{'year_diff_tcg_ocg'} = $tcg_ocg->format("%y");
+            $cards[$ci]->{'date_diff_tcg_ocg'} = $tcg_ocg->format("%y Years %m Months %d Days");
+        }
+
+
+        return $cards;
     }
 }

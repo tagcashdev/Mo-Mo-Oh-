@@ -8,19 +8,14 @@
                     <?php
                     echo '<pre>'; print_r($card); echo '</pre>';
 
-                    $cards_tcg = date_create($card->cards_tcg);
-                    $cards_ocg = date_create($card->cards_ocg);
-                    $tcg_ocg = date_diff($cards_tcg, $cards_ocg);
-                    $y = $tcg_ocg->format("%y");
-
                     $color = "black";
-                    if($cards_tcg < $cards_ocg){
+                    if($card->cards_tcg_release < $card->cards_ocg_release){
                         $color = "green";
                     }else{
-                        if($y >= 2){ $color = "red"; }
+                        if($card->year_diff_tcg_ocg >= 2){ $color = "red"; }
                     }
 
-                     echo '<span style="color:'.$color.'">'.$tcg_ocg->format("%y Years %m Months %d Days").'</span>';
+                     echo '<span style="color:'.$color.'">'.$card->date_diff_tcg_ocg.'</span>';
                     ?>
                 </div>
             <?php endforeach; ?>
