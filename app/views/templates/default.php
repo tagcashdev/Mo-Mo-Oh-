@@ -90,7 +90,7 @@ $auth = new DatabaseAuth($app->getDb());
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= ($view == 'cards.list' ? 'active' : '') ?>"
-                           href="index.php?p=escs.list&start=NA">
+                           href="index.php?p=cards.list">
                             <svg width="16" height="16" aria-hidden="true" focusable="false" data-prefix="fad"
                                  data-icon="eye" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
                                  class="feather">
