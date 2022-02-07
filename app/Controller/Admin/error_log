@@ -1,0 +1,52 @@
+[29-Jul-2021 15:55:57 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php on line 8
+[29-Jul-2021 15:55:57 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ArtistsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ArtistsController.php on line 8
+[29-Jul-2021 15:55:58 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ActivitiesController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ActivitiesController.php on line 8
+[26-Aug-2021 07:30:59 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/AppController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/AppController.php on line 8
+[26-Aug-2021 13:51:45 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php on line 8
+[11-Jan-2022 22:27:12 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ActivitiesController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ActivitiesController.php on line 8
+[11-Jan-2022 22:37:03 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/AppController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/AppController.php on line 8
+[11-Jan-2022 22:47:20 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ArtistsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ArtistsController.php on line 8
+[12-Jan-2022 23:32:53 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php on line 8
+[13-Jan-2022 01:32:47 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ActivitiesController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ActivitiesController.php on line 8
+[13-Jan-2022 01:41:47 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/AppController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/AppController.php on line 8
+[13-Jan-2022 02:01:12 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ArtistsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/ArtistsController.php on line 8
+[13-Jan-2022 22:29:07 UTC] PHP Fatal error:  Uncaught Error: Class 'App\Controller\Admin\AppController' not found in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/Controller/Admin/EscsController.php on line 8

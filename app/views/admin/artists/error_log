@@ -1,0 +1,12 @@
+[22-Aug-2021 10:42:35 UTC] PHP Notice:  Undefined variable: artists in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[22-Aug-2021 10:42:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[23-Aug-2021 15:54:00 UTC] PHP Notice:  Undefined variable: artists in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[23-Aug-2021 15:54:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[13-Jan-2022 00:58:36 UTC] PHP Notice:  Undefined variable: artists in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[13-Jan-2022 00:58:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[13-Jan-2022 03:40:12 UTC] PHP Notice:  Undefined variable: artists in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[13-Jan-2022 03:40:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[14-Jan-2022 02:29:22 UTC] PHP Notice:  Undefined variable: artists in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[14-Jan-2022 02:29:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[02-Feb-2022 21:42:06 UTC] PHP Notice:  Undefined variable: artists in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17
+[02-Feb-2022 21:42:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/u978558320/domains/animelist.online/public_html/app/views/admin/artists/index.php on line 17

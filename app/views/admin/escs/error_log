@@ -1,0 +1,27 @@
+[23-Aug-2021 03:21:09 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/list.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/list.php on line 1
+[23-Aug-2021 15:06:40 UTC] PHP Notice:  Undefined variable: form in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php on line 4
+[23-Aug-2021 15:06:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function input() on null in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php on line 4
+[14-Jan-2022 00:29:38 UTC] PHP Notice:  Undefined variable: form in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php on line 4
+[14-Jan-2022 00:29:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function input() on null in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php on line 4
+[14-Jan-2022 01:04:32 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/list.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/list.php on line 1
+[14-Jan-2022 14:12:46 UTC] PHP Notice:  Undefined variable: form in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php on line 4
+[14-Jan-2022 14:12:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function input() on null in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/edit.php on line 4
+[14-Jan-2022 16:50:49 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/list.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/escs/list.php on line 1

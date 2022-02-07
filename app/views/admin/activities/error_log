@@ -1,0 +1,12 @@
+[25-Aug-2021 11:57:23 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/u978558320/domains/animelist.online/public_html/app/views/admin/activities/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/activities/index.php on line 2
+[13-Jan-2022 00:50:55 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/u978558320/domains/animelist.online/public_html/app/views/admin/activities/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/activities/index.php on line 2
+[14-Jan-2022 02:20:18 UTC] PHP Fatal error:  Uncaught Error: Class 'App' not found in /home/u978558320/domains/animelist.online/public_html/app/views/admin/activities/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/u978558320/domains/animelist.online/public_html/app/views/admin/activities/index.php on line 2
