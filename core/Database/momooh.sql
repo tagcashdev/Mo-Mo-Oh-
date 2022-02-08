@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 07 fév. 2022 à 10:34
+-- Généré le : mar. 08 fév. 2022 à 15:30
 -- Version du serveur :  5.7.17
 -- Version de PHP : 7.3.28
 
@@ -29,6 +29,7 @@ USE `momooh`;
 -- Structure de la table `cards`
 --
 
+DROP TABLE IF EXISTS `cards`;
 CREATE TABLE IF NOT EXISTS `cards` (
   `id_cards` int(11) NOT NULL AUTO_INCREMENT,
   `cards_title` varchar(255) NOT NULL,
@@ -37,15 +38,15 @@ CREATE TABLE IF NOT EXISTS `cards` (
   `cards_def` int(11) DEFAULT NULL,
   `cards_tcg_release` date DEFAULT NULL,
   `cards_ocg_release` date DEFAULT NULL,
-  `cards_rush_ocg_release` date NOT NULL,
+  `cards_rush_ocg_release` date DEFAULT NULL,
   `cards_speed_release` date DEFAULT NULL,
-  `idx_cards_types` int(11) NOT NULL,
+  `idx_cards_types` int(11) DEFAULT NULL,
   `idx_card_subtypes` int(11) DEFAULT NULL,
   `idx_card_subtypes2` int(11) DEFAULT NULL,
   `idx_card_attributes` int(11) DEFAULT NULL,
   `idx_monsters_types` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_cards`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `cards`
@@ -53,7 +54,9 @@ CREATE TABLE IF NOT EXISTS `cards` (
 
 INSERT INTO `cards` (`id_cards`, `cards_title`, `cards_level`, `cards_atk`, `cards_def`, `cards_tcg_release`, `cards_ocg_release`, `cards_rush_ocg_release`, `cards_speed_release`, `idx_cards_types`, `idx_card_subtypes`, `idx_card_subtypes2`, `idx_card_attributes`, `idx_monsters_types`) VALUES
 (1, 'Odd-Eyes Revolution Dragon', 12, -1, -1, '2020-08-06', '2017-10-04', '0000-00-00', NULL, 2, 8, NULL, 4, 5),
-(2, 'Odd-Eyes Revolution Dragon', 12, -1, -1, '2017-10-04', '2020-08-06', '0000-00-00', NULL, 2, 8, NULL, 4, 5);
+(2, 'Holactie the Creator of Light', 12, -1, -1, NULL, '2020-08-06', '0000-00-00', NULL, 2, 8, NULL, 7, 5),
+(3, 'Timaeus the Knight of Destiny', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'Worm Zero', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -61,6 +64,7 @@ INSERT INTO `cards` (`id_cards`, `cards_title`, `cards_level`, `cards_atk`, `car
 -- Structure de la table `cards_rarity`
 --
 
+DROP TABLE IF EXISTS `cards_rarity`;
 CREATE TABLE IF NOT EXISTS `cards_rarity` (
   `id_cards_rarity` int(11) NOT NULL AUTO_INCREMENT,
   `cards_rarity_title` varchar(255) NOT NULL,
@@ -76,29 +80,29 @@ CREATE TABLE IF NOT EXISTS `cards_rarity` (
 INSERT INTO `cards_rarity` (`id_cards_rarity`, `cards_rarity_title`, `cards_rarity_abbr`, `cards_rarity_order`) VALUES
 (1, 'Common', 'C', 1),
 (2, 'Rare', 'R', 2),
-(3, 'Super Rare', 'SR', 3),
-(4, 'Ultra Rare', 'UR', 4),
-(5, 'Pharaoh\'s Rare', 'UR(PR)', 5),
-(6, 'Ultimate Rare', 'UtR', 6),
-(7, 'Ghost Rare', 'GR', 7),
-(8, 'Platinium Rare', 'PlR', 8),
-(9, 'Starlight Rare', 'StR', 9),
-(10, 'Secret Rare', 'ScR', 10),
-(11, 'Prismatic Secret Rare', 'PScR', 11),
-(12, 'Platinium Secret Rare', 'PlScR', 12),
+(3, 'Super Rare', 'SR', 4),
+(4, 'Ultra Rare', 'UR', 6),
+(5, 'Pharaoh\'s Rare', 'UR(PR)', 8),
+(6, 'Ultimate Rare', 'UtR', 11),
+(7, 'Ghost Rare', 'GR', 11),
+(8, 'Platinium Rare', 'PlR', 6),
+(9, 'Starlight Rare', 'StR', 12),
+(10, 'Secret Rare', 'ScR', 9),
+(11, 'Prismatic Secret Rare', 'PScR', 10),
+(12, 'Platinium Secret Rare', 'PlScR', 10),
 (13, '10000 Secret Rare', '10000ScR', 13),
-(14, 'Gold Rare', 'GUR', 14),
-(15, 'Gold Secret Rare', 'GScR', 15),
-(16, 'Ghost/Gold Rare', 'GGR', 16),
-(17, 'Premium Gold Rare', 'PGR', 17),
-(18, 'Parallel Rare', 'PR', 18),
-(19, 'Super Parallel Rare', 'SPR', 19),
-(20, 'Ultra Parallel Rare', 'UPR', 20),
-(21, 'Secret Parallel Rare', 'ScPR', 21),
-(22, 'Starfoil Rare', 'SFR', 22),
-(23, 'Mosaic Rare', 'MSR', 23),
-(24, 'Shatterfoil Rare', 'SHR', 24),
-(25, 'Collector\'s Rare', 'CR', 25);
+(14, 'Gold Rare', 'GUR', 6),
+(15, 'Gold Secret Rare', 'GScR', 8),
+(16, 'Ghost/Gold Rare', 'GGR', 9),
+(17, 'Premium Gold Rare', 'PGR', 6),
+(18, 'Parallel Rare', 'PR', 3),
+(19, 'Super Parallel Rare', 'SPR', 5),
+(20, 'Ultra Parallel Rare', 'UPR', 7),
+(21, 'Secret Parallel Rare', 'ScPR', 10),
+(22, 'Starfoil Rare', 'SFR', 3),
+(23, 'Mosaic Rare', 'MSR', 3),
+(24, 'Shatterfoil Rare', 'SHR', 3),
+(25, 'Collector\'s Rare', 'CR', 11);
 
 -- --------------------------------------------------------
 
@@ -106,6 +110,7 @@ INSERT INTO `cards_rarity` (`id_cards_rarity`, `cards_rarity_title`, `cards_rari
 -- Structure de la table `cards_types`
 --
 
+DROP TABLE IF EXISTS `cards_types`;
 CREATE TABLE IF NOT EXISTS `cards_types` (
   `id_cards_types` int(11) NOT NULL AUTO_INCREMENT,
   `cards_types_title` varchar(255) NOT NULL,
@@ -142,6 +147,7 @@ INSERT INTO `cards_types` (`id_cards_types`, `cards_types_title`, `cards_types_b
 -- Structure de la table `card_attributes`
 --
 
+DROP TABLE IF EXISTS `card_attributes`;
 CREATE TABLE IF NOT EXISTS `card_attributes` (
   `id_card_attributes` int(11) NOT NULL AUTO_INCREMENT,
   `card_attributes_title` varchar(255) NOT NULL,
@@ -168,6 +174,7 @@ INSERT INTO `card_attributes` (`id_card_attributes`, `card_attributes_title`, `c
 -- Structure de la table `card_subtypes`
 --
 
+DROP TABLE IF EXISTS `card_subtypes`;
 CREATE TABLE IF NOT EXISTS `card_subtypes` (
   `id_card_subtypes` int(11) NOT NULL AUTO_INCREMENT,
   `card_subtypes_title` varchar(255) NOT NULL,
@@ -197,6 +204,7 @@ INSERT INTO `card_subtypes` (`id_card_subtypes`, `card_subtypes_title`) VALUES
 -- Structure de la table `monsters_types`
 --
 
+DROP TABLE IF EXISTS `monsters_types`;
 CREATE TABLE IF NOT EXISTS `monsters_types` (
   `id_monsters_types` int(11) NOT NULL AUTO_INCREMENT,
   `monsters_types_title` varchar(255) NOT NULL,
@@ -241,6 +249,7 @@ INSERT INTO `monsters_types` (`id_monsters_types`, `monsters_types_title`) VALUE
 -- Structure de la table `owned_cards`
 --
 
+DROP TABLE IF EXISTS `owned_cards`;
 CREATE TABLE IF NOT EXISTS `owned_cards` (
   `id_owned_cards` int(11) NOT NULL AUTO_INCREMENT,
   `owned_cards_quantity` int(11) NOT NULL,
