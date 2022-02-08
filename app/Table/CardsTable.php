@@ -27,8 +27,32 @@ class CardsTable extends Table
         $cards = $this->q($sql, false);
 
         foreach ($cards as $ci => $card) {
-            $tcg_ocg = date_diff(date_create($card->cards_tcg_release), date_create($card->cards_ocg_release));
+            // get data from api
+            $url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php?name='.urlencode($card->cards_title);
 
+            $ch = curl_init();
+            $options = array(
+                CURLOPT_URL            => $url,
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_HEADER         => false,
+                CURLOPT_SSL_VERIFYPEER => 0,
+            );
+            curl_setopt_array($ch, $options );
+            $data = curl_exec($ch);
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+            if ( $httpCode != 200 ){
+                echo "Return code is {$httpCode} \n"
+                    .curl_error($ch);
+            } else {
+                $cards[$ci]->{'image_url'} = json_decode($data, true)['data']['0']['card_images']['0']['image_url'];
+            }
+
+            curl_close($ch);
+
+
+            // calculate date_diff between TCG & OCG
+            $tcg_ocg = date_diff(date_create($card->cards_tcg_release), date_create($card->cards_ocg_release));
             $cards[$ci]->{'year_diff_tcg_ocg'} = $tcg_ocg->format("%y");
             $cards[$ci]->{'date_diff_tcg_ocg'} = $tcg_ocg->format("%y Years %m Months %d Days");
         }
